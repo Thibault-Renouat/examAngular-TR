@@ -1,1 +1,43 @@
-<p>computers works!</p>
+<ng-container *ngIf="isLoading">
+  Chargement en cours
+</ng-container>
+
+<ng-container *ngIf="!isLoading">
+  <h1>{{ computers.length }} chaussures en stock</h1>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Modèle</th>
+      <th scope="col">Marque</th>
+      <th scope="col">Type</th>
+      <th scope="col">Catégorie</th>
+      <th scope="col">Prix D'achat</th>
+      <th scope="col">Prix de vente</th>
+      <th scope="col">Date d'entrée en stock</th>
+      <th scope="col">Indice de Rentabilité</th>
+      <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let computer of computers">
+      <th scope="row" class="lineComputer">{{ computer.id }} </th>
+      <td>{{ computer.modele }}</td>
+      <td>{{ computer.marque }}</td>
+      <td>{{ computer.type }}</td>
+      <td>{{ computer.category }}</td>
+      <td>{{ computer.prixAchat }}</td>
+      <td>{{ computer.prixVente }}</td>
+      <td>{{ computer.dateEntreStock|date: "d/MM/y" }}</td>
+      <td>Todo Calcul</td>
+
+      <td>
+        <a [routerLink]="['/computer/', computer.id]">Voir le détail</a> <br>
+        <a [routerLink]="['/computers/edit', computer.id]">Editer</a> <br>
+        <a href="">Todo supprimer</a>
+<!--        <a class="cursor-pointer" (click)="deleteChaussure(chaussure)">Supprimer</a>-->
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</ng-container>

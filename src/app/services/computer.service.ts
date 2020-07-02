@@ -13,6 +13,7 @@ export class ComputerService {
   apiUrlComputers = 'http://localhost:3000/computers';
   marquesDisponibles = ['Dell', 'Hp', 'Apple', 'Asus'];
   typesDisponibles= ['Portable', 'Fixe', 'Tablette hybride'];
+  categoriesDisponibles= ['Gaming', 'Bureautique', 'Premier prix'];
 
   constructor(private http: HttpClient) { }
 

@@ -12,6 +12,7 @@ export class ComputersComponent implements OnInit {
   computers: Computer[];
   isLoading: boolean;
 
+
   constructor(private computerService:ComputerService) { }
 
   ngOnInit(): void {

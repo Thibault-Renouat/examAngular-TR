@@ -25,6 +25,10 @@ export class ComputerService {
     );
   }
 
+  getOneById(id: number): Observable<Computer>{
+    return this.http.get<Computer>(this.apiUrlComputers +'/'+ id).pipe(retry(1), catchError(this.handleError));
+  }
+
   addComputer(computer:Computer): Observable<Computer> {
     return this.http.post<Computer>(this.apiUrlComputers, computer).pipe(
       retry(1),
@@ -32,6 +36,13 @@ export class ComputerService {
     );
   }
 
+
+  editComputer(computer: Computer):Observable<Computer>{
+    return this.http.put<Computer>(this.apiUrlComputers +'/'+ computer.id, computer ).pipe(
+      retry(1),
+      catchError(this.handleError)
+    );
+  }
 
   handleError(error) {
     let errorMessage = '';

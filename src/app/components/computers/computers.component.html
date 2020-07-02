@@ -28,8 +28,8 @@
       <td>{{ computer.category }}</td>
       <td>{{ computer.prixAchat }}</td>
       <td>{{ computer.prixVente }}</td>
-      <td>{{ computer.dateEntreStock|date: "d/MM/y" }}</td>
-      <td>{{ computer.prixVente - computer.prixAchat | number}}</td>
+      <td>{{ computer.dateEntreStock|date: "dd/MM/y" }}</td>
+      <td>{{ computer.prixVente - computer.prixAchat | number}} €</td>
 
       <td>
         <a [routerLink]="['/computer/', computer.id]">Voir le détail</a> <br>

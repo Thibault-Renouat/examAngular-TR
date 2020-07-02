@@ -1,1 +1,19 @@
-<p>computers-detail works!</p>
+<div class="container">
+  <ng-container *ngIf="isLoading">
+    Chargement en cours
+  </ng-container>
+
+  <ng-container *ngIf="!isLoading">
+    <h1>Détail de l'ordinateur n° {{ computer.id }}</h1>
+    <label>Modèle : {{ computer.modele }}</label> <br>
+    <label>Marque : {{ computer.marque }}</label><br>
+    <label>Type : {{ computer.type }}</label><br>
+    <label>Catégorie : {{ computer.category }}</label><br>
+    <label>Prix d'achat : {{ computer.prixAchat }}</label><br>
+    <label>Prix de vente : {{ computer.prixVente }}</label><br>
+    <label>Date d'entrée en stock : {{ computer.dateEntreStock|date: 'dd/MM/y' }}</label><br>
+    <label>Indice de rentabilité : {{ computer.prixVente - computer.prixAchat  }} €</label><br>
+  </ng-container>
+
+
+</div>

@@ -25,6 +25,12 @@ export class ComputerService {
     );
   }
 
+  addComputer(computer:Computer): Observable<Computer> {
+    return this.http.post<Computer>(this.apiUrlComputers, computer).pipe(
+      retry(1),
+      catchError(this.handleError)
+    );
+  }
 
 
   handleError(error) {

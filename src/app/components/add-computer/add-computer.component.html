@@ -9,12 +9,13 @@
         le modèle n'est pas valide
       </div>
     </div>
+    <hr>
 
-    <div class="form-group">
+    <div class="form-group ">
       <label>Marque de l'ordinateur</label> <br>
       <ng-container *ngFor="let marque of marquesDispo">
-        <div>
-          <label for="inputRadio-{{ marque }}">{{ marque }}</label>
+        <div class="inputRadio">
+          <label for="inputRadio-{{ marque }}">{{ marque }}</label>&nbsp;
           <input type="radio" id="inputRadio-{{ marque }}"
                  #marqueValidation="ngModel"
                  name="marque" [value]="marque" required [(ngModel)]="computerForm.marque">
@@ -23,7 +24,7 @@
       <div [hidden]="validationForm.controls.marque?.valid" class="alert alert-danger">
         La marque de l'ordinateur est nécessaire
       </div>
-    </div>
+    </div><hr>
 
 
     <div class="form-group">
@@ -39,13 +40,13 @@
       <div [hidden]="type.valid" class="alert alert-danger">
         Le type de l'ordinateur est nécessaire
       </div>
-    </div>
+    </div><hr>
 
     <div class="form-group">
       <label>Catégorie de l'ordinateur</label> <br>
       <ng-container *ngFor="let categorie of categoriesDispo">
-        <div>
-          <label for="inputRadio-{{ categorie }}">{{ categorie }}</label>
+        <div class="inputRadio">
+          <label for="inputRadio-{{ categorie }}">{{ categorie }}</label>&nbsp;
           <input type="radio" id="inputRadio-{{ categorie }}"
                  #categorieValidation="ngModel"
                  name="categorie" [value]="categorie" required [(ngModel)]="computerForm.category">
@@ -54,7 +55,7 @@
       <div [hidden]="validationForm.controls.categorie?.valid" class="alert alert-danger">
         La catégorie de l'ordinateur est nécessaire
       </div>
-    </div>
+    </div><hr>
 
     <div class="form-group">
       <label>Prix d'achat de l'ordinateur</label> <br>
@@ -63,7 +64,8 @@
       <div [hidden]="prixAchat.valid" class="alert alert-danger">
             Le prix d'achat de l'ordinateur est nécessaire
       </div>
-    </div>
+    </div><hr>
+
     <div class="form-group">
       <label>Prix de vente de l'ordinateur</label> <br>
       <input [(ngModel)]="computerForm.prixVente" name="prixVente"
@@ -71,7 +73,7 @@
       <div [hidden]="prixVente.valid" class="alert alerde venter">
             Le prix de vente de l'ordinateur est nécessaire
       </div>
-    </div>
+    </div><hr>
 
     <input id="submitFormChaussure" [disabled]="!validationForm.valid" type="submit" class="btn btn-success" value="Valider">
 

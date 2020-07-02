@@ -5,3 +5,17 @@ body{
   width: 85%;
   margin: auto;
 }
+
+.inputRadio {
+  display: inline;
+  margin-right: 2rem;
+}
+
+
+hr{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+  /*margin-top: 2rem;*/
+
+}

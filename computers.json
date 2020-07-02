@@ -7,98 +7,18 @@
       "type": "Portable",
       "category": "Bureautique",
       "prixAchat": 120.88,
-      "prixVente": 300.1,
+      "prixVente": 456.98,
       "dateEntreStock": "2012-04-23T18:25:43.511Z"
     },
     {
       "id": 2,
       "modele": "test",
-      "marque": "Hp",
-      "type": "Fixe",
-      "category": "Gaming",
-      "prixAchat": 1756.87,
-      "prixVente": 2099,
-      "dateEntreStock": "2020-07-02T10:26:04.703Z"
-    },
-    {
-      "id": 3,
-      "modele": "Basic",
-      "marque": "Dell",
-      "type": "Portable",
-      "category": "Bureautique",
-      "prixAchat": 412.87,
-      "prixVente": 650,
-      "dateEntreStock": "2020-07-02T10:26:44.539Z"
-    },
-    {
-      "id": 4,
-      "modele": "Test ajout e2e",
-      "marque": "Asus",
-      "type": "Fixe",
-      "category": "Gaming",
-      "prixAchat": 530.76,
-      "prixVente": 700,
-      "dateEntreStock": "2020-07-02T13:34:24.453Z"
-    },
-    {
-      "id": 5,
-      "modele": "Test ajout e2e",
-      "marque": "Asus",
-      "type": "Fixe",
-      "category": "Gaming",
-      "prixAchat": 530.76,
-      "prixVente": 895,
-      "dateEntreStock": "2020-07-02T13:46:51.298Z"
-    },
-    {
-      "id": 6,
-      "modele": "Test ajout e2e",
-      "marque": "Asus",
-      "type": "Fixe",
-      "category": "Gaming",
-      "prixAchat": 530.76,
-      "prixVente": 895,
-      "dateEntreStock": "2020-07-02T13:58:40.530Z"
-    },
-    {
-      "id": 7,
-      "modele": "Test ajout e2e",
-      "marque": "Asus",
-      "type": "Fixe",
-      "category": "Gaming",
-      "prixAchat": 530.76,
-      "prixVente": 895,
-      "dateEntreStock": "2020-07-02T14:00:42.529Z"
-    },
-    {
-      "id": 8,
-      "modele": "Test ajout e2e",
-      "marque": "Asus",
-      "type": "Fixe",
-      "category": "Gaming",
-      "prixAchat": 530.76,
-      "prixVente": 895,
-      "dateEntreStock": "2020-07-02T14:02:38.891Z"
-    },
-    {
-      "id": 9,
-      "modele": "Test ajout e2e",
-      "marque": "Asus",
-      "type": "Fixe",
-      "category": "Gaming",
-      "prixAchat": 530.76,
-      "prixVente": 895,
-      "dateEntreStock": "2020-07-02T14:18:59.205Z"
-    },
-    {
-      "id": 10,
-      "modele": "Test ajout e2e",
-      "marque": "Asus",
-      "type": "Fixe",
-      "category": "Gaming",
-      "prixAchat": 530.76,
-      "prixVente": 895,
-      "dateEntreStock": "2020-07-02T14:24:16.204Z"
+      "marque": "Apple",
+      "type": "Tablette hybride",
+      "category": "Premier prix",
+      "prixAchat": 500,
+      "prixVente": 750,
+      "dateEntreStock": "2020-07-02T14:40:56.924Z"
     }
   ]
 }

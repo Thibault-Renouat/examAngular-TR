@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display my name', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('ExamAngularTR app is running!');
+    expect(page.getTitleText()).toEqual('Exam Angular Thibault RENOUAT');
   });
 
   afterEach(async () => {

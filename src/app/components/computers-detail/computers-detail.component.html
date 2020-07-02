@@ -12,7 +12,7 @@
     <label>Prix d'achat : {{ computer.prixAchat }}</label><br>
     <label>Prix de vente : {{ computer.prixVente }}</label><br>
     <label>Date d'entrée en stock : {{ computer.dateEntreStock|date: 'dd/MM/y' }}</label><br>
-    <label>Indice de rentabilité : {{ computer.prixVente - computer.prixAchat  }} €</label><br>
+    <label>Indice de rentabilité : {{ computer.prixVente - computer.prixAchat | number }} €</label><br>
   </ng-container>
 
 

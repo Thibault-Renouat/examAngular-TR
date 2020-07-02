@@ -70,12 +70,12 @@
       <label>Prix de vente de l'ordinateur</label> <br>
       <input [(ngModel)]="computerForm.prixVente" name="prixVente"
              type="number" class="form-control" required #prixVente="ngModel" >
-      <div [hidden]="prixVente.valid" class="alert alerde venter">
+      <div [hidden]="prixVente.valid" class="alert alert-danger">
             Le prix de vente de l'ordinateur est nécessaire
       </div>
     </div><hr>
 
-    <input id="submitFormChaussure" [disabled]="!validationForm.valid" type="submit" class="btn btn-success" value="Valider">
+    <input id="submitFormComputer" [disabled]="!validationForm.valid" type="submit" class="btn btn-success" value="Valider">
 
   </form>
 </div>

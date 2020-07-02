@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Computer} from '../../models/computer';
 import {ComputerService} from '../../services/computer.service';
 import {Router} from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-add-computer',
@@ -16,7 +17,7 @@ export class AddComputerComponent implements OnInit {
   categoriesDispo: string[];
 
 
-  constructor(private computerService: ComputerService, private router: Router) { }
+  constructor(private computerService: ComputerService, private router: Router,private toastr: ToastrService) { }
 
   ngOnInit(): void {
 
@@ -32,8 +33,14 @@ export class AddComputerComponent implements OnInit {
     console.log(this.computerForm);
     this.computerService.addComputer(this.computerForm).subscribe(data => {
       this.router.navigate(['/computers'])
+      this.showSuccess();
     })
 
+   }
+
+  showSuccess() {
+    this.toastr.success('Hello to added computer :) !', 'Félicitations!');
   }
+
 
 }

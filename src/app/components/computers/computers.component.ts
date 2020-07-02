@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Computer } from '../../models/computer';
 import {ComputerService} from '../../services/computer.service';
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-computers',
@@ -13,7 +15,7 @@ export class ComputersComponent implements OnInit {
   isLoading: boolean;
 
 
-  constructor(private computerService:ComputerService) { }
+  constructor(private computerService:ComputerService, private toastr:ToastrService) { }
 
   ngOnInit(): void {
 
@@ -32,8 +34,13 @@ export class ComputersComponent implements OnInit {
       this.computerService.getAllComputers().subscribe(allComputer => {
         this.computers = allComputer;
         this.isLoading = false;
+        this.showSuccess();
       });
     });
+  }
+
+  showSuccess() {
+    this.toastr.success('Ordinateur Supprimé!', 'GoodBye ;(');
   }
 
 

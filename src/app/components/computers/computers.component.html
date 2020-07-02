@@ -3,7 +3,7 @@
 </ng-container>
 
 <ng-container *ngIf="!isLoading">
-  <h2>{{ computers.length }} chaussures en stock</h2>
+  <h2>{{ computers.length }} Ordinateurs en stock</h2>
   <table class="table">
     <thead>
     <tr>
@@ -26,8 +26,8 @@
       <td>{{ computer.marque }}</td>
       <td>{{ computer.type }}</td>
       <td>{{ computer.category }}</td>
-      <td>{{ computer.prixAchat }}</td>
-      <td>{{ computer.prixVente }}</td>
+      <td>{{ computer.prixAchat }} €</td>
+      <td>{{ computer.prixVente }} €</td>
       <td>{{ computer.dateEntreStock|date: "dd/MM/y" }}</td>
       <td>{{ computer.prixVente - computer.prixAchat | number}} €</td>
 

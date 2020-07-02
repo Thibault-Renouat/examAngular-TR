@@ -17,9 +17,12 @@ describe(`Test de l'ajout d'ordinateur`, () => {
 
 
     // ** je compte le nombre de lignes de mon tableau d'ordinateurs **
-    page.nap();
     element.all(by.className('lineComputer')).then(totalRows =>{
       nbLineInit = totalRows.length;
+      page.nap();
+      // console.log(`comptage effectué: ${nbLineInit}`);
+
+
     });
 
     // ** je clic sur mon lien d'ajout d'ordinateur **
@@ -31,11 +34,18 @@ describe(`Test de l'ajout d'ordinateur`, () => {
     page.nap();
     element.all(by.id('submitFormComputer')).click();
     expect(browser.driver.getCurrentUrl()).toContain('/computers');
+    page.nap();
+    // console.log(`validation formulaire réussie`);
+
+
+
 
     // ** je recompte mon tableau pour vérifier l'ajout  **
     element.all(by.className('lineComputer')).then(totalRows =>{
       nbLineInit += 1;
       expect(totalRows.length).toEqual(nbLineInit);
+      // console.log(`égalité parfaite: ${totalRows.length} = ${nbLineInit}`);
+
       page.sleep()
     });
 

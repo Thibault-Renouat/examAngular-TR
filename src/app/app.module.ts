@@ -11,7 +11,9 @@ import { EditComputerComponent } from './components/edit-computer/edit-computer.
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { MenuComponent } from './components/menu/menu.component';
+import { CommonModule } from '@angular/common';
 
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { MenuComponent } from './components/menu/menu.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,CommonModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot() // ToastrModule added
   ],
   providers: [],
   bootstrap: [AppComponent]

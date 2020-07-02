@@ -1,5 +1,11 @@
 # ExamAngularTR
 
+##################################
+
+J'ai ajouté une option dans le protactor.conf.js pour avoir chrome en fullscreen lors des tests e2e. je t'ai fait un screenshot du forum et de l'option ( dans assets/documentation ) si jamais ça bug sur ton mac.
+
+##################################
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
 ## Development server

@@ -1,0 +1,13 @@
+#leftPartForm, #rightPartForm{
+  display: inline-block;
+  width: 40%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+#leftPartForm{
+  margin-right: 2rem;
+
+}
+
+

@@ -44,6 +44,14 @@ export class ComputerService {
     );
   }
 
+  removeComputer(computer: Computer): Observable<Computer> {
+    return this.http.delete<Computer>(this.apiUrlComputers + '/' + computer.id).pipe(
+      retry(1),
+      catchError(this.handleError)
+    );
+  }
+
+
   handleError(error) {
     let errorMessage = '';
     if ( error.error instanceof ErrorEvent ) {

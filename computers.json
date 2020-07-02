@@ -13,12 +13,22 @@
     {
       "id": 2,
       "modele": "test",
+      "marque": "Hp",
+      "type": "Fixe",
+      "category": "Gaming",
+      "prixAchat": 1756.87,
+      "prixVente": 2099,
+      "dateEntreStock": "2020-07-02T10:26:04.703Z"
+    },
+    {
+      "id": 3,
+      "modele": "Basic",
       "marque": "Dell",
       "type": "Portable",
-      "category": "Gaming",
-      "prixAchat": 6,
-      "prixVente": 1,
-      "dateEntreStock": "2020-07-02T09:31:01.518Z"
+      "category": "Bureautique",
+      "prixAchat": 412.87,
+      "prixVente": 599,
+      "dateEntreStock": "2020-07-02T10:26:44.539Z"
     }
   ]
 }

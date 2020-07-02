@@ -19,3 +19,13 @@ hr{
   /*margin-top: 2rem;*/
 
 }
+
+.cursor-pointer{
+  cursor: pointer;
+  color: red !important;
+
+}
+
+.cursor-pointer:hover {
+  text-decoration: underline !important;
+}

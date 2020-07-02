@@ -26,4 +26,15 @@ export class ComputersComponent implements OnInit {
 
   }
 
+  removeComputer(computer: Computer) {
+    this.isLoading = true;
+    this.computerService.removeComputer(computer).subscribe(data => {
+      this.computerService.getAllComputers().subscribe(allComputer => {
+        this.computers = allComputer;
+        this.isLoading = false;
+      });
+    });
+  }
+
+
 }
